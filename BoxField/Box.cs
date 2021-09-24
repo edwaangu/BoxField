@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace BoxField
 {
@@ -18,6 +19,11 @@ namespace BoxField
             size = _size;
             speed = _speed;
             color = _color;
+        }
+
+        public void Move()
+        {
+            y += speed;
         }
     }
 }
